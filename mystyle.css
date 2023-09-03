@@ -1,3 +1,28 @@
 body {
     background-color: powderblue;
 }
+.title{
+    position: absolute;
+    background: yellow;
+    top: 0px;
+    left: 450px;
+    font-style: italic;
+}
+.Pug{
+    position: absolute;
+    top: 150px;
+    left: 330px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color:#40cadc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+.message {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }

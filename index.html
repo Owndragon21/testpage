@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <title>Strona Maciasa</title>
     <link rel="stylesheet" href="mystyle.css"> 
 </head>
+
 <body>
+    <h1 class="title">Witamy na stronie Maciasa</h1>
+    <img class="Pug" src=Pug_FeaturedImage.jpg alt="HTML5" style="width:600px;height:400px">
 
-<h1>Witamy na stronie Maciasa</h1>
+    <div class="container">
+        <div class="message" id="message">
+            Enter text            
+        </div>
+        <input type="text" id="textInput" class="input-field" placeholder="Enter text">
+        <button type="button" id="submitButton" class="submit-btn">Submit</button>
+    </div>
 
-<h2>Test VSCode with GitHub</h2>
-<img src=Pug_FeaturedImage.jpg>
+  <script>
+    document.getElementById("submitButton").addEventListener("click", function() {
+      var inputText = document.getElementById("textInput").value;
+      var messageDiv = document.getElementById("message");
+
+      if (inputText === "xyz") {
+        messageDiv.textContent = "Congratulations! You found the secret message!";
+        document.getElementById("textInput").style.display = "none";
+        document.getElementById("submitButton").style.display = "none";
+      } else {  
+        messageDiv.textContent = "Enter \"xyz\" to see a special message!";
+      }
+    });
+  </script>
 
 </body>
 </html>
